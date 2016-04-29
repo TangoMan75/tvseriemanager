@@ -1,0 +1,508 @@
+html, body {
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    height: 100%;
+    background-image: url(../img/cover6.jpeg);
+}
+
+
+.background {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    background-color: rgb(236, 240, 241);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+#main-content {
+    min-height: 100%;
+    height: 100%;
+    margin: 0 auto -4em;
+}
+
+.navbar-header {
+	width: 100%; 
+}
+
+
+#signIn{
+	float: right;
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+/*********************************
+Header
+*********************************/
+header {
+    height: auto;
+    margin-bottom: 20px; 
+    border-bottom-left-radius: 10px; 
+    border-bottom-right-radius: 10px;
+    background-color: rgba(146, 150, 151, 0.7);
+}
+
+#site-logo img {
+    width: 75px;
+    display: block;
+    margin: auto;
+}
+
+#log-form input {
+    width: 300px;
+}
+
+/* barre de connexion */
+#log-nav {
+    float: right;
+    border: 1px solid black;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-right: 10px;
+    width: 90%;
+    height: 90%;
+    background-color: rgb(255, 255, 255);
+}
+
+
+#log-form {
+    width: 222px;
+    display: block;
+    margin: auto;
+}
+
+#pw-forgot, #login-input {
+    margin-left: 18px;
+}
+
+#pw-forgot {
+    font-size: 11px;
+}
+
+
+/* lien mot de passe oublié */
+.form-group a {
+    text-decoration: none;
+}
+
+#log-form input {
+    width: 144px;
+    border-radius: 4px;
+}
+
+/* menu */
+#menu a, #menu-logout a {
+    font-size: 18px;
+    text-decoration: none;
+}
+
+#menu a:hover, #menu-logout a:hover {
+    background-color: rgb(86, 95, 94);
+}
+
+#menu-logout a{
+    color: black;
+}
+
+#menu ul, #menu-logout ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#menu-logout, #menu {
+    text-align: center;
+}
+
+#menu li, #menu-logout li {
+    padding: 4px;
+}
+
+#login-name {
+    text-align: center;
+}
+
+
+/*********************************
+Barre de recherche
+*********************************/
+#keyword-input {
+    width: 100%;
+    padding-bottom: 15px;
+}
+
+#search-button {
+    visibility: hidden;
+}
+
+
+#result-search {
+    position: absolute;
+    background-color: white;
+}
+
+/*#serie-search-form {
+    padding-top: 27px;
+}*/
+
+#serie-search-form input{
+    height: 35px;
+}
+
+/*********************************
+Grid
+*********************************/
+#grid {
+    margin: auto;
+}
+
+/*********************************
+Vignette Masonry
+*********************************/
+.card h1 {
+    text-align: center;
+}
+
+.card img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px;
+}
+
+.card p {
+    text-align: justify;
+    padding: 10px;
+    width: 260px;
+    margin: auto;
+}
+
+.card {
+    width: 290px;
+}
+
+/* section vignette */
+/* #section {
+    padding-top: 170px;
+} */
+
+
+/*********************************
+Sheet
+*********************************/
+.sheet {
+	padding-bottom: 80px;
+}
+
+.sheet h1 {
+    text-align: center;
+}
+
+.sheet-item {
+	padding-bottom: 20px;
+}
+
+/*********************************
+Page série détail
+*********************************/
+#serie-info img {
+   width: 100%;
+   height: 100%;
+}
+
+#links a {
+    color: ;
+    text-decoration: none;
+}
+
+#add-collection, #remove-collection {
+    padding: 5px;
+    border: 1px solid;
+    border-radius: 5px;
+    width: 200px;
+}
+
+#remove-collection {
+    background-color: rgba(231, 76, 60, 0.4);
+    color: rgba(231, 76, 60,1.0);
+}
+
+#add-collection {
+    background-color: rgba(39, 174, 96, 0.4);
+    color: rgba(39, 174, 96, 1.0);
+}
+
+
+/* icons amazon/kickass */
+
+#links i, a {
+    color: rgb(46, 55, 54);
+}
+
+#links i:hover {
+    color: rgb(0, 0, 0);
+}
+
+.season a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 19px;
+}
+
+.season li {
+    list-style: none;
+    padding-top: 10px;
+}
+
+.season ul {
+    padding-left: 0;
+}
+
+#links {
+    padding-top: 15px;
+}
+
+/*********************************
+Page détail épisode
+*********************************/
+#episode-info img {
+    width: 100%;
+    height: 100%;
+}
+
+#season-episode {
+    font-size: 15px;
+}
+
+#episode-info div {
+    padding-bottom: 20px;
+}
+
+/*********************************
+Page profil
+*********************************/
+#profile-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+#profile-list li a {
+    text-decoration: none;
+}
+
+
+
+
+
+/*********************************
+Footer
+*********************************/
+/*méthode du sticky footer prise sur http://ryanfait.com/resources/footer-stick-to-bottom-of-page/*/
+footer {
+    width: 100%;
+    padding-top: 10px;
+    background-color: rgb(146, 150, 151);
+    position: fixed;
+    bottom: 0;
+    font-size: 13px;
+    visibility: hidden;
+}
+
+footer p {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+footer .push {
+    height: 80px;
+}
+
+footer a {
+    color: rgb(0, 0, 0);
+    display: inline-block;
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+    /*text-align: center;*/
+    margin-bottom: 0;
+    height: 23px;
+}
+
+footer li {
+    display: inline-block;
+}
+
+/*********************************
+Media query
+*********************************/
+
+@media (min-width: 480px) {
+    /* logo */
+    #site-logo img {
+        width: 75px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto
+    }
+
+    /*menu*/
+
+
+    /* menu navigation */
+    #log-nav {
+        float: right;
+        border: 1px solid black;
+        padding: 15px;
+        border-radius: 5px;
+        margin-top: 10px;
+        width: 200px;
+        height: 160px;
+    }
+    
+    /* image série */
+    #serie-info img {
+        width: 380px;
+        height: 562px;
+    }
+
+    #section {
+        padding-top: 50px;
+    }
+
+    #menu-logout a{
+        visibility: visible;
+    }
+
+    #serie-info {
+        height: 1020px;
+     }
+
+    footer ul {
+        text-align: center;
+    }
+
+    footer {
+        visibility: visible;
+    }
+
+}
+
+@media (min-width: 770px) {
+
+    /* barre de recherche */
+    #keyword-input {
+        width: 670px;
+    }
+
+    #main-content {
+        width: 700px;
+        height: 100%;
+    }
+
+    #site-logo img {
+        width: 203px;
+        float: left;
+    }
+
+    #menu-logout, #menu {
+        text-align: left;
+    }
+
+    #menu-logout, #menu {
+        padding-top: 145px;
+    }
+
+    #menu-logout li, #menu li {
+        display: inline;
+    }
+
+    #menu a, #menu-logout a {
+        padding: 10px;
+        margin: 0;
+    }
+
+    #menu a:hover, #menu-logout a:hover {
+        background-color: #F5F5F5;
+    }
+
+    /* bouton de recherche */
+    #search-button {
+        float: left;
+        visibility: visible;
+    }
+
+    .card {
+        width: 310px;
+    }
+
+    #section {
+        padding-top: 30px;
+    }
+
+}
+
+@media (min-width: 1000px){
+
+    #main-content {
+        width: 1000px;
+        height: 100%;
+    }
+
+    /* info série */
+    .detail-serie {
+        width: 400px;
+        float: left;
+        margin-right: 100px
+    }
+
+    .card {
+        width: 300px;
+     }
+
+     #keyword-input {
+         width: 970px;
+     }
+
+    #serie-info {
+        height: 800px;
+     }
+    
+}
+
+@media (min-width: 1300px) {
+
+    header {
+        height: 213px;
+    }
+
+    #main-content {
+        width: 1300px;
+        height: 100%;
+        margin: auto;
+    }
+
+    #site-logo img {
+        width: 203px;
+    }
+
+    #result-search {
+        width: 599px;
+    }
+
+    .detail-serie {
+        width: 600px;
+
+    }
+
+    #episode-info img {
+        width: 500px;
+        height: 333px;
+    }
+
+    #keyword-input {
+         width: 1270px;
+     }
+}

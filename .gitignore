@@ -18,6 +18,17 @@ $RECYCLE.BIN/
 *.lnk
 
 # =========================
+# W
+# =========================
+
+app/config.php
+node_modules/
+phpDocumentor.cmd
+phpDocumentor.phar
+vendor/
+*.txt
+
+# =========================
 # Operating System Files
 # =========================
 
