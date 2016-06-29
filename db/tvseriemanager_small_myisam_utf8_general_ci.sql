@@ -14,12 +14,12 @@ SET time_zone = "+00:00";
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
+/*!40101 SET NAMES utf8 */;
 
 --
 -- Base de données :  `tvseriemanager`
 --
-CREATE DATABASE IF NOT EXISTS `tvseriemanager` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8_general_ci;
+CREATE DATABASE IF NOT EXISTS `tvseriemanager` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
 USE `tvseriemanager`;
 
 -- --------------------------------------------------------
@@ -34,7 +34,7 @@ CREATE TABLE `bookmarks` (
   `user_id` int(10) UNSIGNED NOT NULL,
   `serie_id` int(10) UNSIGNED DEFAULT NULL,
   `episode_id` int(10) UNSIGNED DEFAULT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8_general_ci;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 -- --------------------------------------------------------
 
@@ -53,7 +53,7 @@ CREATE TABLE `episodes` (
   `season` int(10) UNSIGNED NOT NULL,
   `episode` int(10) UNSIGNED NOT NULL,
   `air_date` varchar(255) COLLATE utf8_general_ci NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8_general_ci;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
 -- Contenu de la table `episodes`
@@ -5418,7 +5418,7 @@ CREATE TABLE `series` (
   `season_count` int(10) UNSIGNED NOT NULL,
   `start_date` year(4) NOT NULL,
   `end_date` year(4) DEFAULT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8_general_ci;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
 -- Contenu de la table `series`
@@ -5506,7 +5506,7 @@ CREATE TABLE `users` (
   `password` varchar(255) COLLATE utf8_general_ci NOT NULL,
   `token` varchar(255) COLLATE utf8_general_ci NOT NULL,
   `username` varchar(191) COLLATE utf8_general_ci NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8_general_ci;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
 -- Index pour les tables exportées
@@ -5526,7 +5526,7 @@ ALTER TABLE `bookmarks`
 --
 ALTER TABLE `episodes`
   ADD PRIMARY KEY (`id`),
-  ADD UNIQUE KEY `unique_imdb_id` (`imdb_id`),
+  ADD UNIQUE KEY `u_imdb_id` (`imdb_id`),
   ADD KEY `serie_id` (`serie_id`,`title`),
   ADD KEY `id` (`id`,`imdb_id`,`serie_id`,`title`);
 
@@ -5535,7 +5535,7 @@ ALTER TABLE `episodes`
 --
 ALTER TABLE `series`
   ADD PRIMARY KEY (`id`),
-  ADD UNIQUE KEY `unique_imdb_id` (`imdb_id`),
+  ADD UNIQUE KEY `u_imdb_id` (`imdb_id`),
   ADD KEY `imdb_id` (`imdb_id`),
   ADD KEY `title` (`title`),
   ADD KEY `id` (`id`,`imdb_id`,`title`);

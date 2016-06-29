@@ -20,9 +20,9 @@ class UserController extends Controller
 	public function register()
 	{
 
-		$error = "";
+		$error    = "";
 		$username = "";
-		$email = "";
+		$email    = "";
 
 		// Vérification de formulaire
 		if ($_POST){
@@ -104,7 +104,6 @@ class UserController extends Controller
 	/**
 	 * Page de connexion
 	 */
-
 	public function login()
 	{
 		if (!empty($_POST)){
@@ -112,7 +111,7 @@ class UserController extends Controller
 			$password = $_POST['password'];
 
 			$authentificationManager = new \W\Security\AuthentificationManager;
-			$result = $authentificationManager->isValidLoginInfo( $username, $password);
+			$result = $authentificationManager->isValidLoginInfo($username, $password);
 			// connexion réussie
 			if ($result){
 				// on récupère le user en base de données
@@ -137,7 +136,6 @@ class UserController extends Controller
 	/**
 	 * Page de déconnexion
 	 */
-
 	public function logout()
 	{
 		$authentificationManager = new \W\Security\AuthentificationManager;
@@ -150,7 +148,6 @@ class UserController extends Controller
 	/**
 	 *  page password oublié
 	 */
-
 	public function password()
 	{	
 		
@@ -238,7 +235,6 @@ class UserController extends Controller
 	/**
 	 *  page new password
 	 */
-
 	public function newPassword($token, $id)
 	{
 		
@@ -287,6 +283,4 @@ class UserController extends Controller
 
 		$this->show("user/new_password", ["error"=>$error]);
 	}
-
-
 }

@@ -12,7 +12,7 @@ use \W\Manager\Manager;
  * <code>lastId()</code><br>
  * <code>findLike()</code><br>
  * <code>findWhere()</code><br>
- * <code>getrandom()</code><br>
+ * <code>getRandom()</code><br>
  * 
  * @last_modified  14:13 04/03/2016
  * @author         Matthias Morin <matthias.morin@gmail.com>

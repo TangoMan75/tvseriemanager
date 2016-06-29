@@ -2,20 +2,13 @@
 
 namespace Manager;
 
-// classe de base du framework
-
+/**
+ * UserManager
+ *
+ * @last_modified  22:08 29/06/2016
+ * @author         Matthias Morin <matthias.morin@gmail.com>
+ * @copyright      2015-2016 - Matthias Morin, Full Stack Web Developer
+ */
 class UserManager extends \W\Manager\UserManager
 {
-	public function isInCollection($id) {
-		$sql = "SELECT users.username, bookmarks.serie_id 
-				FROM users JOIN bookmarks 
-				ON users.id = bookmarks.user_id 
-				WHERE users.id =" . $_SESSION["user"]["id"] . 
-								" AND bookmarks.serie_id =" . $id;
-		$getBookmark = $this->dbh->prepare($sql);
-		$getBookmark->execute();
-		$foundBookmark = $getBookmark->fetchAll();
-
-		return ($foundBookmark);
-	}
 }

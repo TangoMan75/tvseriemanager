@@ -69,7 +69,7 @@ class SerieController extends Controller {
 		}
 		$serieManager = new \Manager\SerieManager();
 		$serie = $serieManager->find($id);
-		$userManager = new \Manager\UserManager();
+		$userManager = new \Manager\BookmarkManager();
 		$foundBookmark = $userManager->isInCollection($id);
 		$this->show('serie/detail', [
 			"serie" => $serie,
